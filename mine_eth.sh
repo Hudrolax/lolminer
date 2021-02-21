@@ -13,8 +13,8 @@ WALLET=0x189e7b6f3e108b476e08da2def82a33c3bf3a82c.lkrig16
 
 cd "$(dirname "$0")"
 
-./lolMiner --algo ETHASH --pool $POOL --user $WALLET $@
+./lolMiner --algo ETHASH --pool $POOL --user $WALLET $@ --apiport 3333
 while [ $? -eq 42 ]; do
     sleep 10s
-    ./lolMiner --algo ETHASH --pool $POOL --user $WALLET $@
+    ./lolMiner --algo ETHASH --pool $POOL --user $WALLET $@ --apiport 3333
 done

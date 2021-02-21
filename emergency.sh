@@ -7,3 +7,4 @@
 ##################################
 
 echo "Hallo World from emergency script"
+sudo reboot
